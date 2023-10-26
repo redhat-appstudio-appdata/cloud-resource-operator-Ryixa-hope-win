@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: cloud-resource-operator
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-user-workloads/jkiely-tenant/cloud-resource-operator/cloud-resource-operator@sha256:fc192098edde4e47a0cb3cd887487829ab2d3979501cb13b5ffbf99043134787
         imagePullPolicy: Always
         name: container-image
         ports:
