@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: cloud-resource-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: cloud-resource-operator
+    app.kubernetes.io/part-of: cloud-resource-operator
+  name: cloud-resource-operator
+spec:
+  ports:
+  - port: 8008
+    targetPort: 8008
+  selector:
+    app.kubernetes.io/instance: cloud-resource-operator
+status:
+  loadBalancer: {}
